@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Acuaria.Runtime.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Acuaria.Editor.csproj" />
+</Solution>

@@ -1,0 +1,19 @@
+{
+  "name": "Acuaria.Tests.PlayMode",
+  "rootNamespace": "Acuaria.Tests",
+  "references": [
+    "Acuaria.Runtime"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Acuaria.Editor",
+  "rootNamespace": "Acuaria.Editor",
+  "references": [
+    "Acuaria.Runtime"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
