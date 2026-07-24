@@ -48,6 +48,24 @@ La configuración de cámara se serializa dentro del componente; no se crea un a
 global porque actualmente existe una sola cámara y el estado de ejecución permanece
 separado de la configuración.
 
+## Primer pez
+
+El sistema del Sprint 3 mantiene separadas cuatro responsabilidades:
+
+- `FishSpecies`: `ScriptableObject` con datos configurables de una especie; nunca
+  contiene estado de una partida.
+- `Fish`: estado dinámico de una instancia, incluyendo posición, dirección,
+  velocidad, destino y temporizador.
+- `FishMovementLogic`: movimiento puro y testeable, selección acotada de destino,
+  giro gradual y permanencia dentro de `AquariumBounds`.
+- `FishMovement` y `FishSpawner`: adaptación al ciclo de vida de Unity,
+  representación visual e instanciación de un solo ejemplar.
+
+La lógica consume `FishMovementSettings`, una copia inmutable derivada de
+`FishSpecies`. Esto evita que la simulación escriba sobre el asset y permite probarla
+sin escenas ni tiempo real. El spawner queda preparado para cambiar su política en el
+futuro, pero el Sprint 3 limita deliberadamente la población a una instancia.
+
 ## Decisiones de la fundación
 
 - `ApplicationBootstrap` es el único componente runtime: verifica que vive en

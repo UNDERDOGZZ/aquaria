@@ -244,7 +244,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1730542380}
   m_Father: {fileID: 1099675649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099675648
@@ -348,6 +349,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8070241512889293292, guid: 92e1cfeb203bd474c8478f0ff774f1df, type: 3}
   m_PrefabInstance: {fileID: 1122412785}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1730542379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730542380}
+  - component: {fileID: 1730542381}
+  m_Layer: 0
+  m_Name: FishSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730542380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730542379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 430143873}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1730542381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730542379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c280e3e2b4e886c4e97062592ebdb677, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Acuaria.Runtime::Acuaria.Fish.FishSpawner
+  species: {fileID: 11400000, guid: f74f51cfbba8eff449762b053b620866, type: 2}
+  fishPrefab: {fileID: 1732240450090068865, guid: c7e604285528e6f4d97d455651dbfe6e, type: 3}
+  aquariumVolume: {fileID: 1833869047}
+  randomSeed: 7391
 --- !u!1 &1795330543
 GameObject:
   m_ObjectHideFlags: 0
