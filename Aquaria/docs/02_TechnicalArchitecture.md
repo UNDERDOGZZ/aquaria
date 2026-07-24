@@ -34,7 +34,21 @@ fuera de esta raíz hasta que exista una decisión explícita sobre ellos.
 
 Se usa un solo assembly runtime para evitar fragmentación prematura.
 
-## Decisiones de este sprint
+## Cámara y prototipo de acuario
+
+El Sprint 2 añade tres capas separadas:
+
+- `PointerInputReader` traduce mouse o touch a `CameraInputState`, sin mover objetos.
+- `AquariumCameraController` consume ese estado, aplica configuración y representa la vista.
+- `AquariumBounds` modela el volumen sin depender de cámara, input ni escenas.
+
+`CameraMotionMath` contiene límites deterministas que pueden probarse en EditMode.
+`AquariumVolume` adapta los límites locales de un tanque a coordenadas de mundo.
+La configuración de cámara se serializa dentro del componente; no se crea un asset
+global porque actualmente existe una sola cámara y el estado de ejecución permanece
+separado de la configuración.
+
+## Decisiones de la fundación
 
 - `ApplicationBootstrap` es el único componente runtime: verifica que vive en
   `Bootstrap` y no navega ni conserva estado global.
