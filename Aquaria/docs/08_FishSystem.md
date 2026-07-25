@@ -69,3 +69,10 @@ simulación del agua quedan explícitamente fuera de este sprint.
 6. Cambia velocidades o radio de giro en `PrototypeFish.asset`, reinicia Play Mode
    y compara el resultado.
 7. Ejecuta la suite EditMode desde Test Runner.
+
+## Integración visual actual
+
+Guppy y Clownfish incorporan animación visual mediante adaptadores; la animación
+nunca decide su trayectoria. La población inicial actual es de 12 peces: 6 Guppy,
+4 Clownfish y 2 Neon placeholder. Hambre, salud, reproducción, cardúmenes y
+simulación del agua permanecen fuera de alcance.

@@ -62,3 +62,10 @@ crece de forma significativa.
 4. Comprueba techo, suelo, esquinas, pitch y ausencia de roll permanente.
 5. Activa gizmos en un pez y revisa destino, rumbo y radio de separación.
 6. Cambia temporalmente la suma de grupos a 20 y repite sin errores rojos.
+
+## Población con modelos reales
+
+La escena actual sustituye la población inicial anterior por 6 Guppy, 4 Clownfish y
+2 Neon Tetra placeholder. Guppy y Clownfish usan adaptadores animados bajo
+`_Acuaria/Prefabs/Fish`; el placeholder conserva una referencia de depuración.
+La lógica multi-especie, el registro y la separación no cambian.

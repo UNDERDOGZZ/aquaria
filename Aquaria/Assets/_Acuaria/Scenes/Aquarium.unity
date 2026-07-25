@@ -430,15 +430,15 @@ MonoBehaviour:
   registry: {fileID: 1920252231}
   runtimeParent: {fileID: 826323318}
   groups:
-  - species: {fileID: 11400000, guid: 7574fc7be0cb7eb4cb5a0019bea30c76, type: 2}
-    count: 8
+  - species: {fileID: 11400000, guid: 2afebf0ff00b54146a2763a92a72da52, type: 2}
+    count: 6
     minimumInitialSeparation: 0.42
     seed: 1001
-  - species: {fileID: 11400000, guid: 2afebf0ff00b54146a2763a92a72da52, type: 2}
+  - species: {fileID: 11400000, guid: ac33d992ac4179c4ebc30ee13a93a1c1, type: 2}
     count: 4
     minimumInitialSeparation: 0.42
     seed: 8920
-  - species: {fileID: 11400000, guid: 7ea287c5ab6aab440824bd1e0e056f65, type: 2}
+  - species: {fileID: 11400000, guid: 7574fc7be0cb7eb4cb5a0019bea30c76, type: 2}
     count: 2
     minimumInitialSeparation: 0.42
     seed: 16839

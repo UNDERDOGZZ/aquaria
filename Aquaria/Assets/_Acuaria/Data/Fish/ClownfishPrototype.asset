@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eaf2f3e4671e3d7418f850d380715c7a, type: 3}
-  m_Name: GuppyPrototype
+  m_Name: ClownfishPrototype
   m_EditorClassIdentifier: Acuaria.Runtime::Acuaria.Fish.FishSpecies
-  speciesId: guppy
-  displayName: Guppy
-  visualPrefab: {fileID: 3471416205822385686, guid: 588d6b5e7577de84d83597121af97224, type: 3}
-  minimumScale: 0.8
-  maximumScale: 1
-  minimumSpeed: 0.58
-  maximumSpeed: 0.92
-  acceleration: 0.48
-  deceleration: 0.62
-  turningSpeed: 95
+  speciesId: clownfish
+  displayName: Clownfish
+  visualPrefab: {fileID: 1105335341583314095, guid: 05adfb3f7c57c88468a9ca9cf231c994, type: 3}
+  minimumScale: 0.9
+  maximumScale: 1.12
+  minimumSpeed: 0.42
+  maximumSpeed: 0.7
+  acceleration: 0.34
+  deceleration: 0.48
+  turningSpeed: 72
   minimumDirectionTime: 1.7
   maximumDirectionTime: 4.4
-  wallSafetyDistance: 0.65
-  preferredDepthMinimum: 0.28
-  preferredDepthMaximum: 0.78
-  maximumVerticalVariation: 0.5
-  maximumAscentAngle: 17
-  maximumDescentAngle: 15
-  separationRadius: 1
+  wallSafetyDistance: 0.728
+  preferredDepthMinimum: 0.22
+  preferredDepthMaximum: 0.7
+  maximumVerticalVariation: 0.4
+  maximumAscentAngle: 14
+  maximumDescentAngle: 12
+  separationRadius: 1.12
   separationStrength: 0.55
   maximumSeparation: 0.35
   maximumVisualBank: 4
   swimOscillation: 0
   prototypeColor: {r: 1, g: 1, b: 1, a: 1}
-  suggestedPrototypeCount: 6
+  suggestedPrototypeCount: 4

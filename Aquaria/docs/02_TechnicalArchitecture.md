@@ -79,6 +79,17 @@ La orientación estable vive en `FishOrientationLogic`. El objeto raíz mantiene
 separación usa un recorrido directo sobre hasta 20 peces, sin física, LINQ ni
 allocations por frame.
 
+## Integración visual Fish Alive
+
+La integración mantiene el límite de propiedad de Sprint 4. El prefab raíz de cada
+pez pertenece a Acuaria y contiene `FishMovement`; su hijo `Visual` aloja el rig,
+`SkinnedMeshRenderer` y `Animator` procedentes de Fish Alive.
+`FishAnimationController` traduce la velocidad simulada al parámetro visual
+`swimSpeed`. No calcula movimiento, evasión, navegación ni orientación.
+
+Los prefabs fuente de `Assets/DenysAlmaral/FishAlive` son dependencias de solo lectura.
+Los `FishSpecies` apuntan a adaptadores bajo `_Acuaria`, nunca a prefabs externos.
+
 ## Decisiones de la fundación
 
 - `ApplicationBootstrap` es el único componente runtime: verifica que vive en
