@@ -8,6 +8,7 @@ Cada fase requiere validación antes de avanzar; el alcance puede cambiar con pr
    móvil):** tanque provisional, cámara orbital limitada y controles mouse/touch.
 4. **Fase 3 — Primer pez (implementada, pendiente de validación visual):** placeholder
    visible, movimiento continuo, destinos naturales y límites seguros.
+   **Sprint 4 implementado:** múltiples especies, orientación estable y separación ligera.
 5. **Fase 4 — Alimentación:** primera interacción sistémica.
 6. **Fase 5 — Simulación básica del agua:** parámetros mínimos y comunicación de estado.
 7. **Fase 6 — Guardado y progreso offline:** persistencia versionada y recuperación segura.
@@ -16,5 +17,5 @@ Cada fase requiere validación antes de avanzar; el alcance puede cambiar con pr
 10. **Fase 9 — Optimización móvil:** perfiles, medición y presupuestos de rendimiento.
 11. **Fase 10 — Publicación de demo:** estabilización, cumplimiento y distribución.
 
-Estado actual: Sprint 3 implementado. La compilación y los tests automatizados se
-registran en cada entrega; el movimiento debe validarse visualmente dentro de Unity.
+Estado actual: Sprint 4 implementado. La compilación y los tests automatizados se
+registran en cada entrega; la población debe validarse visualmente durante dos minutos.

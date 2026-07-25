@@ -66,6 +66,19 @@ La lógica consume `FishMovementSettings`, una copia inmutable derivada de
 sin escenas ni tiempo real. El spawner queda preparado para cambiar su política en el
 futuro, pero el Sprint 3 limita deliberadamente la población a una instancia.
 
+## Múltiples peces y especies
+
+Sprint 4 amplía el mismo modelo: `FishSpecies` define configuración y prefab,
+`Fish` conserva identidad y estado por instancia, `FishSpawnPlanner` produce planes
+deterministas y `FishSpawner` los materializa. `FishRegistry` es una dependencia de
+escena pequeña que mantiene una lista de solo lectura para separación; no contiene
+movimiento ni es singleton.
+
+La orientación estable vive en `FishOrientationLogic`. El objeto raíz mantiene
+`Vector3.up`, mientras `Visual` aplica únicamente oscilación y bank visual. La
+separación usa un recorrido directo sobre hasta 20 peces, sin física, LINQ ni
+allocations por frame.
+
 ## Decisiones de la fundación
 
 - `ApplicationBootstrap` es el único componente runtime: verifica que vive en

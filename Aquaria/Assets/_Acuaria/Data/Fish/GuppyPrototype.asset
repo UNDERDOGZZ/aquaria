@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf2f3e4671e3d7418f850d380715c7a, type: 3}
+  m_Name: GuppyPrototype
+  m_EditorClassIdentifier: Acuaria.Runtime::Acuaria.Fish.FishSpecies
+  speciesId: guppy-prototype
+  displayName: Guppy Prototype
+  visualPrefab: {fileID: 1732240450090068865, guid: c7e604285528e6f4d97d455651dbfe6e, type: 3}
+  minimumScale: 0.52
+  maximumScale: 0.68
+  minimumSpeed: 0.52
+  maximumSpeed: 0.82
+  acceleration: 0.4
+  deceleration: 0.55
+  turningSpeed: 80
+  minimumDirectionTime: 1.6
+  maximumDirectionTime: 4.5
+  wallSafetyDistance: 0.476
+  preferredDepthMinimum: 0.42
+  preferredDepthMaximum: 0.82
+  maximumVerticalVariation: 0.55
+  maximumAscentAngle: 18
+  maximumDescentAngle: 16
+  separationRadius: 0.782
+  separationStrength: 0.55
+  maximumSeparation: 0.35
+  maximumVisualBank: 4
+  swimOscillation: 1.1
+  prototypeColor: {r: 0.95, g: 0.58, b: 0.12, a: 1}
+  suggestedPrototypeCount: 4

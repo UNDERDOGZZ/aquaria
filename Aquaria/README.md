@@ -1,8 +1,8 @@
 # Acuaria
 
 Acuaria es un proyecto mobile-first de simulación de acuarios y aquascaping para
-futuras versiones en Android e iOS. Incluye un acuario navegable y un primer pez
-placeholder; todavía no contiene necesidades, simulación del agua, guardado ni UI funcional.
+futuras versiones en Android e iOS. Incluye un acuario navegable y una población
+provisional de tres especies; todavía no contiene necesidades, agua, guardado ni UI funcional.
 
 ## Requisitos
 
@@ -30,9 +30,9 @@ Los assets de muestra y la configuración URP generados por la plantilla se cons
 
 ## Estado actual
 
-Sprint 3 implementado: un pez placeholder nada continuamente dentro del volumen del
-acuario con giros suaves y datos configurables en `FishSpecies`. Consulta
-`docs/07_CameraAndInput.md` y `docs/08_FishSystem.md`.
+Sprint 4 implementado: 14 peces de tres especies usan identidad individual,
+profundidad preferida, orientación estable y separación ligera. Consulta
+`docs/08_FishSystem.md` y `docs/09_MultiFishAndSpecies.md`.
 
 ## Colaborar
 

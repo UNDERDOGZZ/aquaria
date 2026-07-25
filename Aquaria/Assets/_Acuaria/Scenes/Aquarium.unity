@@ -246,6 +246,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1730542380}
+  - {fileID: 1920252230}
+  m_Father: {fileID: 1099675649}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &826323317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826323318}
+  m_Layer: 0
+  m_Name: RuntimeFish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826323318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826323317}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 1099675649}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1099675648
@@ -281,6 +313,7 @@ Transform:
   - {fileID: 1122412786}
   - {fileID: 2010479790}
   - {fileID: 430143873}
+  - {fileID: 826323318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1122412785
@@ -393,10 +426,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c280e3e2b4e886c4e97062592ebdb677, type: 3}
   m_Name:
   m_EditorClassIdentifier: Acuaria.Runtime::Acuaria.Fish.FishSpawner
-  species: {fileID: 11400000, guid: f74f51cfbba8eff449762b053b620866, type: 2}
-  fishPrefab: {fileID: 1732240450090068865, guid: c7e604285528e6f4d97d455651dbfe6e, type: 3}
   aquariumVolume: {fileID: 1833869047}
-  randomSeed: 7391
+  registry: {fileID: 1920252231}
+  runtimeParent: {fileID: 826323318}
+  groups:
+  - species: {fileID: 11400000, guid: 7574fc7be0cb7eb4cb5a0019bea30c76, type: 2}
+    count: 8
+    minimumInitialSeparation: 0.42
+    seed: 1001
+  - species: {fileID: 11400000, guid: 2afebf0ff00b54146a2763a92a72da52, type: 2}
+    count: 4
+    minimumInitialSeparation: 0.42
+    seed: 8920
+  - species: {fileID: 11400000, guid: 7ea287c5ab6aab440824bd1e0e056f65, type: 2}
+    count: 2
+    minimumInitialSeparation: 0.42
+    seed: 16839
 --- !u!1 &1795330543
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +547,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3086455184563162385, guid: 3e880a3f4ed20c34e9ce615f687e3bc1, type: 3}
   m_PrefabInstance: {fileID: 1833869046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1920252229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920252230}
+  - component: {fileID: 1920252231}
+  m_Layer: 0
+  m_Name: FishRegistry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920252230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920252229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 430143873}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1920252231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920252229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d6ca85246c20c4eabed6ec720cf289, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Acuaria.Runtime::Acuaria.Fish.FishRegistry
 --- !u!1 &2010479789
 GameObject:
   m_ObjectHideFlags: 0

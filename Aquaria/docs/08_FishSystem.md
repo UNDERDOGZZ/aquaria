@@ -2,8 +2,8 @@
 
 ## Objetivo
 
-El Sprint 3 incorpora un único pez visible que nada continuamente dentro del tanque.
-Es un prototipo de movimiento, no una simulación de necesidades o comportamiento social.
+Sprint 3 incorporó el primer pez. Sprint 4 conserva ese movimiento y lo amplía a
+múltiples especies e instancias, sin añadir necesidades ni comportamiento social.
 
 ## Arquitectura
 
@@ -13,18 +13,21 @@ Es un prototipo de movimiento, no una simulación de necesidades o comportamient
 - `Fish` contiene exclusivamente estado dinámico.
 - `FishMovementLogic` calcula destinos, dirección, velocidad y posición.
 - `FishMovement` conecta la lógica con el transform y dibuja gizmos opcionales.
-- `FishSpawner` instancia una sola copia del prefab y la conecta al volumen.
+- `FishSpawner` materializa grupos de especies y los conecta al volumen y registro.
+- `FishRegistry` permite separación local sin búsquedas globales.
+- `FishOrientationLogic` limita pitch y elimina roll lógico.
 
 ## Flujo
 
 1. `FishSpawner` recibe especie, prefab y `AquariumVolume`.
-2. Instancia una única copia al comenzar la escena.
+2. Crea planes deterministas para cada grupo al comenzar la escena.
 3. `FishMovement` crea el estado inicial en el centro del volumen seguro.
 4. La lógica selecciona un destino cercano, con pequeñas variaciones respecto a la
    dirección actual.
 5. Cerca de un borde, el nuevo rumbo se inclina hacia el centro.
 6. El giro se limita usando velocidad y radio de giro.
 7. La posición final siempre se restringe a un volumen reducido por el tamaño corporal.
+8. La separación suave evita superposición visual sin convertirse en cardumen.
 
 ## Placeholder visual
 
@@ -33,7 +36,8 @@ el frente, señalado por los ojos. No contiene colliders, animaciones, partícul
 
 ## Configuración
 
-El asset `PrototypeFish.asset` permite ajustar:
+Cada asset de especie permite ajustar identidad, prefab, escala, aceleración,
+profundidad, límites verticales, separación y parámetros visuales además de:
 
 - nombre visible;
 - velocidad mínima y máxima;
@@ -58,7 +62,7 @@ simulación del agua quedan explícitamente fuera de este sprint.
 ## Prueba manual
 
 1. Abre `Aquarium.unity` y entra en Play Mode.
-2. Confirma que `FishSpawner` crea exactamente un pez.
+2. Confirma que `FishSpawner` crea 14 peces de tres especies.
 3. Obsérvalo varios minutos y verifica que gira gradualmente.
 4. Comprueba todos los laterales, techo y suelo del tanque.
 5. Activa gizmos y observa dirección, destino y anticipación de bordes.
